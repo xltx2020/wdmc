@@ -1,0 +1,33 @@
+/*pw 2014/07/31重定义jquery.ui*/
+.ui-widget-content {border:none; background:#E5E5E5; color: #222222; padding:0}
+.ui-widget-header {
+color: #000/*{fcHeader}*/;
+font-weight: bold;
+font-size: 16px;
+font-family: "Microsoft Yahei";
+background:url(../image/cm_bg2.gif) repeat-x;
+border-bottom:1px solid #E5E5E5;
+}
+.ui-corner-all {
+-moz-border-radius: 0/*{cornerRadius}*/;
+-webkit-border-radius: 0/*{cornerRadius}*/;
+border-radius: 0/*{cornerRadius}*/;
+}
+.ui-dialog .ui-dialog-content {
+position: relative;
+border: 0;
+padding: .5em 1em;
+background: #e0eaf8;
+overflow: auto;
+zoom: 1;
+}
+.ui-dialog .ui-dialog-titlebar {
+
+}
+.ui-dialog {
+-moz-box-shadow: 0px 1px 9px #999;
+-webkit-box-shadow: 0px 1px 9px #999;
+box-shadow: 0px 1px 9px #999;
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#999')";
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#999');
+}

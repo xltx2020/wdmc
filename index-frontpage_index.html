@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 页面头部【start】 -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        首页--达州韦度门窗销售有限公司</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="expires" content="Sunday 26 October 2008 01:00 GMT">
+    <script type="text/javascript" src="static/js/tree.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script type="text/javascript" language="javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="static/js/jquery.ui.custom.min.js"></script>
+    <script type="text/javascript" language="javascript" src="static/js/droppy.js"></script>
+    <script type="text/javascript" language="javascript" src="static/js/thickbox.js"></script>
+    <script type="text/javascript" language="javascript" src="static/js/helper.js"></script>
+    <!--[if lte IE 6]>
+<script type="text/javascript" language="javascript" src="script/png.js"></script>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="static/css/thickbox.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.ui.core.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.ui.dialog.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.ui.resizable.css">
+    <script type="text/javascript">
+        window.PHPSESSID = "6g0phiod6lnds1mtb6k5l6kt06";
+
+        function parseToURL() {
+            return "admin/"
+        }
+
+        function operate_logo(dis, id) {
+            if (dis == 0) { //点击传过来是0，则表示已经隐藏，现在应该做显示处理
+                $.post("index.php?_m=mod_media&_a=operate_logo", {
+                    id: id,
+                    display: dis
+                }, function(data) {
+                    reloadPage();
+                })
+
+            } else {
+                $.post("index.php?_m=mod_media&_a=operate_logo", {
+                    id: id,
+                    display: dis
+                }, function(data) {
+                    reloadPage();
+                });
+            }
+        }
+
+        function operate_banner(dis, id, url) {
+            if (dis == 0) { //点击传过来是0，则表示已经隐藏，现在应该做显示处理
+                $.post("index.php?_m=mod_media&_a=operate_banner", {
+                    id: id,
+                    display: dis,
+                    url: url
+                }, function(data) {
+                    reloadPage();
+                })
+
+            } else {
+                $.post("index.php?_m=mod_media&_a=operate_banner", {
+                    id: id,
+                    display: dis,
+                    url: url
+                }, function(data) {
+                    //			alert(data);
+                    reloadPage();
+                });
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="static/css/pw_reset_style.css">
+
+
+</head>
+<!--  页面头部【end】 -->
+
+<body class="body1" style="">
+    <div id="getValues" value="index" style="display:none;"></div>
+    <div id="getParams" value='a:2:{s:2:"_m";s:9:"frontpage";s:2:"_a";s:5:"index";}' style="display:none;"></div>
+    <div class="header">
+        <div class="header_con">
+            <div class="logo">
+                <div id="MODBLK_222" class="mod_block media_image mb_logo_block">
+
+                    <div class="flash_image">
+                        <img src="static/picture/logo.png" alt="达州韦度门窗销售有限公司">
+                    </div>
+
+                </div>
+            </div>
+            <div class="switch_langbar">
+                <!-- -->
+
+            </div>
+        </div>
+    </div>
+
+    <div id="nav">
+        <div class="nav_con">
+            <div id="MODBLK_225" class="mod_block mb_56YrvV58_block">
+
+
+                <div class="nav_l"></div>
+                <ul id="nav_dYrArV" class="navigation">
+                    <li>
+                        <a href="" target='_self'>
+    首页</a>
+                    </li>
+                    <li>
+                        <a href="index-mod_static_view_2.html" target='_self'>
+    关于我们</a>
+                    </li>
+                    <li>
+                        <a href="index-mod_product_prdlist_65.html" target='_self'>
+    项目展示</a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="index-mod_static_view_12.html" target='_self'>
+    荣誉资质</a>
+                    </li>
+                    <li>
+                        <a href="index-mod_product_prdlist_66.html" target='_self'>
+    案例展示</a>
+                    </li>
+
+
+                    <li>
+                        <a href="index-mod_static_view_1.html" target='_self'>
+    联系我们</a>
+                    </li>
+                </ul>
+                <div class="nav_r"></div>
+
+
+                <script type="text/javascript">
+                    //$(".navigation li:first").css("background-image","none");
+                    var topMenuNum = 0;
+                    $("#nav_dYrArV li span").hover(
+                        function() {
+                            topMenuNum++;
+                            $(this).attr("id", "kindMenuHover" + topMenuNum);
+                            $("#kindMenuHover" + topMenuNum + " > ul").show();
+                            $(this).parent().addClass("hover");
+                        },
+                        function() {
+                            $("#" + $(this).attr("id") + " > ul").hide();
+                            $(this).attr("id", "");
+                            $(this).parent().removeClass("hover");
+                        }
+                    );
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="banner">
+        <div id="MODBLK_223" class="mod_block media_image mb_banner_block">
+            <div class="flash_image">
+                <div>
+                    <style type="text/css">
+                        #rotator_cndns12 {
+                            WIDTH: 1440px;
+                            HEIGHT: 500px;
+                            margin: 0 auto;
+                            margin-top: 0px;
+                            padding-top: -10px;
+                            background-color: #transparent;
+                        }
+                        
+                        #rotator_cndns12 a {
+                            display: block;
+                            WIDTH: 1440px;
+                            HEIGHT: 500px;
+                        }
+                    </style>
+
+                    <script src="static/js/jquery.cross-slide.js" type="text/javascript"></script>
+                </div>
+            </div>
+            <!--&nbsp;&nbsp;</div>-->
+
+        </div>
+    </div>
+
+    <!-- <hr class="boundary" /> -->
+    <!-- wrap start -->
+    <div class="wrap">
+        <div id="longBarTop" class="clearFloat">
+            <!-- -->
+            <div id="MODBLK_1641" class="mod_block mb_CnfOeFfR_block">
+                <h3 class="blk_t"><em>about us</em>关于我们</h3>
+                <style type="text/css">
+                    .copyright .list_bot {
+                        display: none;
+                    }
+                </style>
+                <div class="com_con"></div>
+                <div class="list_bot"></div>
+            </div>
+        </div>
+        <div class="three clearFloat">
+            <div class="threeLeft">
+                <!-- -->
+                <div id="MODBLK_1642" class="mod_block mb_UysuITUN_block">
+                    <style type="text/css">
+                        .copyright .list_bot {
+                            display: none;
+                        }
+                    </style>
+                    <div class="com_con"><img src="static/picture/20180403020717_48257.jpg" width="238" height="269" alt=""></div>
+                    <div class="list_bot"></div>
+                </div>
+            </div>
+
+            <div class="threeRight">
+                <!-- -->
+                <div id="MODBLK_1643" class="mod_block mb_v76oj6JH_block">
+                    <div class="list_con company_intro">
+                        <p><span style="font-size:20px;font-family:'Microsoft YaHei';">&nbsp; &nbsp;</span>
+
+
+                            <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">达州韦度门窗销售有限公司座落于素有“川东明珠”美誉的四川达州市。公司生产基地占地面积近2000平方米,公司员工十余名,专注门窗制作、安装一站式系统服务。</p>
+                            <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">公司拥有极简、智简、广扑等多种系列，包括断桥推拉窗、断桥平开窗、普铝推拉窗。断热系统隔热条根据客户及产品特性需求采用多规格。</p>
+                            <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">达州韦度门窗销售有限公司凭借产品赢得良好信誉,经过多年市场沉淀,在业内树立了良好的产品及市场口碑。</p>
+                            <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">以匠心为引，逐市场之光，拓多元业务，绘就行业璀璨画卷，为广大客户创造更优质的生活空间。<br>韦度门窗，开启品质生活之度，守护家的每一处温馨。</p>
+
+
+                            <p><span style="font-size:16px;font-family:'Microsoft YaHei';"> &nbsp;<span style="color:#E53333;"> &nbsp; &nbsp;欢迎大家与我门窗建立合作的长期伙伴关系,24小时服务热线：<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;13088148608（侯）   18982897077（郭）</span></span>
+                            </p>
+                            <p><span style="color:#E53333;font-size:18px;"></span></p>
+                    </div>
+                </div>
+                <div class="list_bot"></div>
+            </div>
+        </div>
+    </div>
+    <div id="longBarCenter" class="clearFloat">
+        <!-- -->
+        <div id="MODBLK_1651" class="mod_block mb_dfNQcfeN_block">
+            <h3 class="blk_t"><em>Recommended</em>产品推荐</h3>
+            <style type="text/css">
+                .copyright .list_bot {
+                    display: none;
+                }
+                
+                </Pstyle><div class="com_con"></div><div class="list_bot"></div></div><div id="MODBLK_1664" class="mod_block mb_ttdwSb52_block"><div class="newprod"><div class="newprod_top"></div><div class="newprod_con"><div class="pro_over"><table class="media_grid" cellspacing="4" width="****"><tr><td><div class="newprod_list"><div class="newprod_pic"><a href="index-mod_product_view_166.html" title="建筑外墙"><img name="picautozoom" border="0" alt="建筑外墙" src="static/picture/20180515100159_28572_lit.jpg" class="prodthumb"></a></div><div class="newprod_name"><a href="index-mod_product_view_166.html">建筑外墙</a></div></div><div class="blankbar1"></div></td></tr></table></div><td><div class="newprod_list"><div class="newprod_pic"><a href="index-mod_product_view_165.html" title="品牌4S店幕墙"><img name="picautozoom" border="0" alt="品牌4S店幕墙" src="static/picture/20180514102007_84591_lit.jpg" class="prodthumb"></a></div><div class="newprod_name"><a href="index-mod_product_view_165.html">品牌4S店幕墙</a></div></div><div class="blankbar1"></div></td></div><td><div class="newprod_list"><div class="newprod_pic"><a href="index-mod_product_view_158.html" title="栏杆铝合金百叶窗"><img name="picautozoom" border="0" alt="栏杆铝合金百叶窗" src="static/picture/20180507101304_42445_lit.jpg" class="prodthumb"></a></div><div class="newprod_name"><a href="index-mod_product_view_158.html">栏杆铝合金百叶窗</a></div></div><div class="blankbar1"></div></td></div><td><div class="newprod_list"><div class="newprod_pic"><a href="index-mod_product_view_156.html" title="建筑幕墙"><img name="picautozoom" border="0" alt="建筑幕墙" src="static/picture/20180507095942_14248_lit.jpg" class="prodthumb"></a></div><div class="newprod_name"><a href="index-mod_product_view_156.html">建筑幕墙</a></div></div><div class="blankbar1"></div></td></div></div></div><div class="list_bot"></div><div class="blankbar"></div><div id="MODBLK_1663" class="mod_block mb_MyY3bymy_block"><style type="text/css">.copyright .list_bot {
+                    display: none;
+                }
+            </style>
+            <div class="wrap">
+
+                <div class="three clearFloat">
+                    <div class="threeLeft">
+                        <!-- -->
+                        <div id="MODBLK_1642" class="mod_block mb_UysuITUN_block">
+                            <style type="text/css">
+                                .copyright .list_bot {
+                                    display: none;
+                                }
+                            </style>
+                            <div class="com_con"><img src="static/picture/极简.png" width="238" height="269" alt=""></div>
+                            <div class="list_bot"></div>
+                        </div>
+                    </div>
+
+                    <div class="threeRight">
+                        <!-- -->
+                        <div id="MODBLK_1643" class="mod_block mb_v76oj6JH_block">
+                            <div class="list_con company_intro">
+                                <p><span style="font-size:20px;font-family:'Microsoft YaHei';">&nbsp; &nbsp;</span>
+
+
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">极简系列：极简/悬浮120断桥推拉窗：</p>
+                                    <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">隔热隔音佳：断桥结构配合密封设计，有效阻隔热量传导与外界噪音，节能且营造安静环境。</p>
+                                    <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">材质工艺优：高品质铝合金强度高、抗风压，表面处理工艺精湛，耐腐蚀且外观持久美观。</p>
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">推拉体验好：滑轮顺滑，操作轻松，密封性能良好，能阻挡灰尘雨水。</p>
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">外观简约美：秉持极简风格，线条流畅，适配多种装修风格，视野开阔。</p>
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">配置选择多：可按需搭配不同颜色、玻璃和五金配件，满足个性化需求。</p>
+
+
+                            </div>
+                        </div>
+                        <div class="list_bot"></div>
+                    </div>
+                </div>
+                <div class="three clearFloat">
+                    <div class="threeLeft">
+                        <!-- -->
+                        <div id="MODBLK_1642" class="mod_block mb_UysuITUN_block">
+                            <style type="text/css">
+                                .copyright .list_bot {
+                                    display: none;
+                                }
+                            </style>
+                            <div class="com_con"><img src="static/picture/智简.png" width="238" height="269" alt=""></div>
+                            <div class="list_bot"></div>
+                        </div>
+                    </div>
+
+                    <div class="threeRight">
+                        <!-- -->
+                        <div id="MODBLK_1643" class="mod_block mb_v76oj6JH_block">
+                            <div class="list_con company_intro">
+                                <p><span style="font-size:20px;font-family:'Microsoft YaHei';">&nbsp; &nbsp;</span>
+
+
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">智简系列：113/120断桥推拉窗（三轨/六轨）：</p>
+                                    <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">性能优越：隔热保温、密封防水、隔音降噪：、安全稳固。</p>
+                                    <p style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">设计美观：外观简约、色彩丰富。</p>
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">使用便捷：推拉顺滑、开启灵活。</p>
+                                    <P style="text-indent:2em;" span style="font-size:20px; font-family:'Microsoft YaHei';">工艺先进：采用先进的生产工艺和设备制造，严格把控质量关，确保产品质量符合高标准要求。</p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="list_bot"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="longBarCenter" class="clearFloat">
+                <div class="com_con"><img src="static/picture/20180502041028_24617.jpg" width="1919" height="246" alt=""></div>
+                <div class="list_bot"></div>
+            </div>
+            <div id="MODBLK_1652" class="mod_block mb_Pm27bTGY_block">
+                <style type="text/css">
+                    .copyright .list_bot {
+                        display: none;
+                    }
+                </style>
+                <div class="list_bot"></div>
+            </div>
+
+            <div class="con">
+                <div class="clearFloat">
+                    <div id="left" class="left left_con FORIE7">
+                        <!-- -->
+                    </div>
+                    <div class="left center_con" style="width:****;">
+                        <div id="centerTop" class="centerTop">
+                            <!-- -->
+                        </div>
+                        <div class="clearFloat">
+                            <div id="centerLeft" class="left centerLeft_con">
+                                <!-- -->
+
+                            </div>
+                            <div id="centerRight" class="right centerRight_con">
+                                <!-- -->
+
+                            </div>
+                        </div>
+                        <div id="centerBottom" class="centerBottom">
+                            <!-- -->
+                        </div>
+                    </div>
+                    <div id="right" class="left right_con">
+                        <!-- -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="longBarBottom" class="">
+                <!-- -->
+                <div id="MODBLK_1660" class="mod_block mb_VfWWbH79_block">
+                    <h3 class="blk_t"><em>product</em>案例展示</h3>
+                    <style type="text/css">
+                        #marquee_demoeVqpZ8 p {
+                            line_height: 120px;
+                            *height: auto !important;
+                            margin: 0;
+                            padding-left: 6px;
+                            padding-right: 6px;
+                            float: left;
+                        }
+                    </style>
+                    <div id="marquee_demoeVqpZ8" class="marquee_list">
+                        <div id="mmmmdddeVqpZ8" style=" float:left; width:32000px">
+                            <div id="marquee_product1eVqpZ8" style="float:left">
+
+                                <p>
+                                    <font style="font-size:12px;">
+                                        <a href="index-mod_product_view_181.html" title="4S店门窗"><img src="static/picture/biyadizhanting_lit.png" border="0" width="160" height="120" alt="比亚迪"></a>
+                                    </font>
+                                    <font style="font-size:12px;"><a href="index-mod_product_view_181.html" title="比亚迪">4S店门窗</a></font>
+                                </p>
+                                <p>
+                                    <font style="font-size:12px;">
+                                        <a href="index-mod_product_view_180.html" title="办公室窗户"><img src="static/picture/biyadixiuxiqu_lit.png" border="0" width="160" height="120" alt="比亚迪"></a>
+                                    </font>
+                                    <font style="font-size:12px;"><a href="index-mod_product_view_180.html" title="比亚迪">办公室窗户</a></font>
+                                </p>
+                                <p>
+                                    <font style="font-size:12px;">
+                                        <a href="index-mod_product_view_171.html" title="北京现代4S店装修"><img src="static/picture/20180702040957_74311_lit.jpg" border="0" width="160" height="120" alt="北京现代4S店装修"></a>
+                                    </font>
+                                    <font style="font-size:12px;"><a href="index-mod_product_view_171.html" title="北京现代4S店装修">北京现代4S店装修</a></font>
+                                </p>
+                                <p>
+                                    <font style="font-size:12px;">
+                                        <a href="index-mod_product_view_178.html" title="比亚迪"><img src="static/picture/biyadishouhoufuwu(1)_lit.png" border="0" width="160" height="120" alt="比亚迪"></a>
+                                    </font>
+                                    <font style="font-size:12px;"><a href="index-mod_product_view_178.html" title="比亚迪">比亚迪</a></font>
+                                </p>
+
+                            </div>
+                            <div id="marquee_product2eVqpZ8" style="float:left"></div>
+                        </div>
+                    </div>
+                    <div class="list_bot"></div>
+                    <script type="text/javascript">
+                        var speed = 30;
+                        var marquee_demoeVqpZ8 = document.getElementById("marquee_demoeVqpZ8");
+
+                        var showwidtheVqpZ8;
+                        var loopwidtheVqpZ8;
+                        var ieVqpZ8;
+                        var meVqpZ8, neVqpZ8;
+
+                        showwidtheVqpZ8 = marquee_demoeVqpZ8.offsetWidth * 1;
+                        loopwidtheVqpZ8 = marquee_product1eVqpZ8.offsetWidth * 1;
+
+                        if (loopwidtheVqpZ8 <= 1) {
+                            loopwidtheVqpZ8 = 1;
+                        }
+
+                        meVqpZ8 = Math.ceil(showwidtheVqpZ8 / loopwidtheVqpZ8);
+
+
+
+                        marquee_demoeVqpZ8.scrollLeft = 0;
+                        ieVqpZ8 = 0;
+
+                        function MarqueeeVqpZ8() {
+
+                            if (ieVqpZ8 >= loopwidtheVqpZ8) {
+                                ieVqpZ8 = 0;
+                            } else {
+                                ieVqpZ8++;
+                            }
+                            marquee_demoeVqpZ8.scrollLeft = ieVqpZ8;
+
+                        }
+                        var MyMareVqpZ8 = setInterval(MarqueeeVqpZ8, speed);
+                        marquee_demoeVqpZ8.onmouseover = function() {
+                            clearInterval(MyMareVqpZ8);
+                        }
+                        marquee_demoeVqpZ8.onmouseout = function() {
+                            MyMareVqpZ8 = setInterval(MarqueeeVqpZ8, speed);
+                        }
+
+                        function leftMar(i) {
+                            var marquee_product2eVqpZ8 = document.getElementById("marquee_product" + (i + 1) * 2 + "eVqpZ8");
+                            var marquee_product1eVqpZ8 = document.getElementById("marquee_product" + (i * 2 + 1) + "eVqpZ8");
+                            for (neVqpZ8 = 0; neVqpZ8 < meVqpZ8; neVqpZ8++) {
+                                marquee_product2eVqpZ8.innerHTML += marquee_product1eVqpZ8.innerHTML;
+                            }
+                        }
+                        leftMar(0);
+                    </script>
+
+                </div>
+            </div>
+
+            <!-- wrap end -->
+
+            <!-- 页脚【start】 -->
+            <div id="footer">
+                <div class="copyright">
+                    <style type="text/css">
+                        .mb_foot_block {
+                            position: relative;
+                        }
+                        
+                        .mb_foot_block a {
+                            display: inline;
+                        }
+                    </style>
+                    <div id="MODBLK_285" class="mod_block mb_foot_block">
+                        <style type="text/css">
+                            .copyright .list_bot {
+                                display: none;
+                            }
+                        </style>
+                        <div class="com_con">Copyright © 2024,All rights reserved<br> 达州韦度门窗销售有限公司 建议使用1024X768分辨率浏览本站</div>
+                        <div class="list_bot"></div>
+                    </div>
+
+                </div>
+                <script type="text/javascript" language="javascript" src="static/js/picAutoZoom.js"></script>
+                <script type="text/javascript" language="javascript">
+                    var r_mod = "frontpage",
+                        webicp = "蜀ICP备18012855号-1".replace(/(^\s*)|(\s*$)/g, ""),
+                        now = Date.now() || new Date().getTime(),
+                        icptime = findCookie("Gmf45n_icptime=") || 0;
+                    if (r_mod === "frontpage" && !webicp && (now / 1000 - icptime > 24 * 60 * 60)) {
+                        $.get("index.php?_a=webicp", function(d) {
+                            d !== "" ? $("#web_icp").text(d) : "";
+                        });
+                    }
+
+                    <!--
+                    $.ajaxSetup({
+                        timeout: 300000
+                    });
+                    //-->
+                </script>
+                <!-- 页脚【end】 -->
+                <div style="display:none;"><a href="https://smalltool.github.io/">仿站小工具官网</a></div>
+</body>
+
+</html>
+<script>
+    $(function() {
+        $('.noContent_right, .noContent_left').bind('click', function() {
+            $(this).addClass('noContent').removeClass('noContent_right noContent_left');
+            if ($('.noContent_right, .noContent_left').length) {
+                $('.center_con').css('width', '75%');
+            } else {
+                $('.center_con').css('width', '');
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".marquee_list img").attr({
+            width: "200",
+            height: "135"
+        });
+        $(".newprod_pic img").removeAttr("name").attr({
+            width: "200",
+            height: "135"
+        });
+        $(".titlelist a").attr("", function() {
+            var s = $(this).attr("title"); //获取title的值，并控制字数
+            $(this).html(s); //重新写入
+        });
+    });
+</script>
